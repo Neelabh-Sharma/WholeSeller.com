@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    width: 100vw;
+    height: 9vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    flex-wrap: wrap;
+}
+.brand-name{
+    font-size: 30px;
+    cursor: pointer;
+}
+.brand-name i{
+    margin-right: 5px;
+}
+.nav-links{
+    height: 100%;
+}
+.nav-links ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+.nav-links ul li a{
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20;
+    cursor: pointer;
+}
+.nav-account{
+    height: 100%;
+}
+.nav-account ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+}
+.nav-account ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.nav-account ul li i{
+    color: transparent;
+    font-size: 25px;
+    -webkit-text-stroke: 2px #000;
+}
+.under-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile{
+    position: relative;
+}
+.nav-profile-dropdown{
+    display: none;
+    height: 14vh;
+    width: 7vw;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+    right: -1.5vw;
+    top: 6vh;
+}
+.nav-profile-dropdown ul {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 5px;
+    font-size: 20px;
+    padding: 12px;  
+    cursor: pointer;
+}
+.profile:hover .nav-profile-dropdown{
+    display: block;
+}
+.drop-down-list {
+    font-family: system-ui;
+    width: 100%;
+}
+.drop-down-list:hover{
+   background-color: rgba(245, 245, 245, 0.673);
+}
+.sidebar{
+    display: none;
+}
+.sidebar i{
+    font-size: 30px;
+}
+.side-container{
+  height: 100vh;
+  width: 20vw;
+  position: absolute;
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  right: 0;
+}
+
+@media only  screen and (max-width:761px) {
+    .nav-links{
+        display: none;
+    }
+    .nav-account{
+        display: none;
+    }
+    .sidebar{
+        display: flex;
+    }
+}

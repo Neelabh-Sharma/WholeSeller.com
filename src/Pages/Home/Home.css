@@ -1,0 +1,18 @@
+.box{
+    margin-top: 10vh;
+    box-sizing: border-box;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+.asidebar{
+    height: 100%;
+    width: 20%;
+    background-color: #fff;
+}
+.main{
+    height: 100%;
+    width: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
